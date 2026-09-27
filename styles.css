@@ -108,3 +108,52 @@
     right:auto;
   }
 }
+/* MOBILE MENU */
+
+.menu-btn{
+  display:none;
+}
+
+@media(max-width:850px){
+
+  .menu-btn{
+    display:block;
+    background:var(--red);
+    color:white;
+    border:0;
+    font-size:26px;
+    padding:6px 12px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+
+  .links{
+    display:none;
+    position:absolute;
+    top:82px;
+    left:0;
+    width:100%;
+    background:white;
+    padding:20px;
+    flex-direction:column;
+    gap:15px;
+    box-shadow:0 5px 15px #0002;
+  }
+
+  .links.show{
+    display:flex;
+  }
+
+  .links .btn{
+    margin-left:0;
+    text-align:center;
+  }
+}
+
+@media(min-width:851px){
+
+  .menu-btn{
+    display:none;
+  }
+
+}
