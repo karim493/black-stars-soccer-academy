@@ -108,6 +108,7 @@
     right:auto;
   }
 }
+
 /* MOBILE MENU */
 
 .menu-btn{
@@ -117,7 +118,7 @@
 @media(max-width:850px){
 
   .menu-btn{
-    display:block;
+    display:block !important;
     background:var(--red);
     color:white;
     border:0;
@@ -128,7 +129,7 @@
   }
 
   .links{
-    display:none;
+    display:none !important;
     position:absolute;
     top:82px;
     left:0;
@@ -141,7 +142,7 @@
   }
 
   .links.show{
-    display:flex;
+    display:flex !important;
   }
 
   .links .btn{
@@ -153,7 +154,7 @@
 @media(min-width:851px){
 
   .menu-btn{
-    display:none;
+    display:none !important;
   }
 
 }
