@@ -314,4 +314,1326 @@ section{
 }
 
 .program:hover{
-  transform:translateY
+  transform:translateY(-5px);
+}
+
+.program h3{
+  font-size:32px;
+  color:var(--gold);
+  margin-top:0;
+}
+
+/* TOURNAMENT */
+.event{
+  background:linear-gradient(110deg,var(--red),#090909);
+  color:white;
+  border-radius:22px;
+  padding:38px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.event strong{
+  color:var(--gold);
+}
+
+/* SPONSORSHIP */
+.sponsorship{
+  background:#eef3ff;
+}
+
+.sponsor-intro{
+  text-align:center;
+  max-width:850px;
+  margin:0 auto 35px;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.sponsor-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.sponsor-card{
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 4px 18px #0001;
+  border-top:6px solid var(--red);
+}
+
+.sponsor-card h3{
+  margin-top:0;
+  color:var(--red);
+  font-size:25px;
+}
+
+.sponsor-card h4{
+  color:var(--blue);
+  font-size:20px;
+}
+
+.sponsor-card p{
+  line-height:1.7;
+}
+
+.price-box{
+  background:#111;
+  color:white;
+  padding:20px;
+  border-radius:14px;
+  margin-top:15px;
+}
+
+.price-box strong{
+  color:var(--gold);
+  font-size:30px;
+}
+
+.sponsor-list{
+  padding-left:20px;
+}
+
+.sponsor-list li{
+  margin:9px 0;
+  line-height:1.5;
+}
+
+.sponsor-button{
+  text-align:center;
+  margin-top:30px;
+  border-top:6px solid var(--gold);
+}
+
+.sponsor-button strong{
+  color:var(--red);
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+
+.gallery img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  border-radius:14px;
+  transition:.2s;
+}
+
+.gallery img:hover{
+  transform:scale(1.02);
+}
+
+/* REGISTRATION FORM */
+.form{
+  max-width:800px;
+  margin:auto;
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 4px 18px #0001;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+label{
+  font-weight:700;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:13px;
+  margin-top:6px;
+  border:1px solid #ccc;
+  border-radius:9px;
+  font:inherit;
+}
+
+textarea{
+  min-height:110px;
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+/* CTA */
+.cta{
+  background:var(--gold);
+  text-align:center;
+}
+
+.cta h2{
+  font-size:38px;
+}
+
+/* FOOTER */
+footer{
+  background:#080808;
+  color:white;
+  padding:45px 7%;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:30px;
+}
+
+footer h3{
+  color:var(--gold);
+}
+
+footer a{
+  display:block;
+  margin:8px 0;
+}
+
+footer a:hover{
+  color:var(--gold);
+}
+
+.copy{
+  background:var(--red);
+  color:white;
+  text-align:center;
+  padding:12px;
+}
+
+/* MOBILE */
+@media(max-width:1000px){
+
+  .links{
+    gap:10px;
+    font-size:14px;
+  }
+
+  .programs{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:850px){
+
+  .links{
+    display:none;
+  }
+
+  .strip,
+  .about,
+  .sponsor-grid,
+  footer{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero{
+    min-height:580px;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .timeline::before{
+    left:10px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(even){
+    width:100%;
+    left:0;
+    padding-left:40px;
+    padding-right:0;
+    text-align:left;
+  }
+
+  .timeline-item::after,
+  .timeline-item:nth-child(odd)::after,
+  .timeline-item:nth-child(even)::after{
+    left:1px;
+    right:auto;
+  }
+
+  .event{
+    display:block;
+  }
+
+}
+
+@media(max-width:560px){
+
+  .top{
+    font-size:12px;
+  }
+
+  .brand img{
+    width:52px;
+    height:52px;
+  }
+
+  .strip,
+  .about,
+  .programs,
+  .gallery,
+  footer,
+  .form-grid,
+  .sponsor-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:55px 6%;
+  }
+
+  .hero .alt{
+    margin:8px 0 0;
+  }
+
+  .gallery img{
+    height:230px;
+  }
+
+  .sponsor-card{
+    padding:22px;
+  }
+
+  section{
+    padding:50px 6%;
+  }
+
+  .title h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP CONTACT BAR -->
+<div class="top">
+  <span>📍 Kiboga District, Uganda</span>
+  <span>📞 0705 318174 | 0788 071574</span>
+  <span>✉ socceracademyblackstars@gmail.com</span>
+</div>
+
+
+<!-- NAVIGATION -->
+<nav class="nav">
+
+  <div class="brand">
+    <img src="logo.jpg" alt="Black Stars Soccer Academy Logo">
+
+    <div>
+      BLACK STARS
+      <span>SOCCER ACADEMY</span>
+
+      <small>
+        Developing Talent • Building Champions
+      </small>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#programs">Programs</a>
+    <a href="#tournament">Tournament</a>
+    <a href="#sponsorship">Sponsorship</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#register" class="btn">Join Now</a>
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+
+  <div>
+
+    <h1>
+      Developing Talent<br>
+      <span>Building Champions</span>
+    </h1>
+
+    <p>
+      Discover, train and nurture young football talent in Kiboga District.
+      We build skills, discipline, teamwork and character.
+    </p>
+
+    <a class="btn" href="#register">
+      Register Your Child
+    </a>
+
+    <a class="btn alt" href="#programs">
+      View Programs
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- ACADEMY INFORMATION -->
+<div class="strip">
+
+  <div>
+    📍
+    <b>Training Ground</b>
+    Kiboga Saaza Playground
+  </div>
+
+  <div>
+    🕒
+    <b>Training Time</b>
+    3:00 PM – 5:00 PM
+  </div>
+
+  <div>
+    👥
+    <b>Age Groups</b>
+    5 – 18 Years
+  </div>
+
+  <div>
+    💰
+    <b>Annual Registration</b>
+    UGX 50,000/=
+  </div>
+
+  <div>
+    💵
+    <b>Weekly Training</b>
+    UGX 2,000/=
+  </div>
+
+  <div>
+    👕
+    <b>Training Kit</b>
+    UGX 25,000/=
+  </div>
+
+</div>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="title">
+    <h2>
+      About <span>Our Academy</span>
+    </h2>
+  </div>
+
+  <div class="about">
+
+    <div class="card">
+
+      <h2>More Than Football</h2>
+
+      <p>
+        Black Stars Soccer Academy is based in Kiboga District, Uganda.
+        Our mission is to provide young players with a positive environment
+        to learn football, develop discipline and teamwork, and grow into
+        confident young people.
+      </p>
+
+      <p>
+        We welcome boys and girls aged 5–18 years.
+      </p>
+
+      <p>
+        The academy was started in 2018 with the aim of giving young people
+        in our community an opportunity to develop through football.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h2>Our Values</h2>
+
+      <p>⭐ Discipline</p>
+      <p>⭐ Teamwork</p>
+      <p>⭐ Respect</p>
+      <p>⭐ Character</p>
+      <p>⭐ Excellence</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HISTORY & ACHIEVEMENTS -->
+<section id="history" class="history">
+
+  <div class="title">
+
+    <h2>
+      Our <span>History & Achievements</span>
+    </h2>
+
+    <p>
+      Building the Black Stars story since 2018.
+    </p>
+
+  </div>
+
+
+  <div class="timeline">
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2018</h3>
+
+        <p>
+          <strong>Black Stars Soccer Academy Kiboga</strong>
+          was established to provide young boys and girls with an opportunity
+          to learn, develop and enjoy football.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2020</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🏆 Under-11 Champions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2021</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🏆 Under-17 Champions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2022</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🥈 Runners-up
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2023</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🏆 Under-11 Champions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2024</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🏆 Under-17 Champions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-card">
+
+        <h3>2025</h3>
+
+        <p>
+          <strong>Sports for a Cause Tournament</strong>
+          <br>
+          🥈 Girls' Team Runners-up
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="history-highlight">
+
+    <h3>
+      More Competition Experience
+    </h3>
+
+    <p>
+      Black Stars Soccer Academy has also participated in the
+      <strong>BEFIT Camp Tournament in Mityana</strong>,
+      giving our young players additional opportunities to compete,
+      gain experience and develop their football abilities.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTBALL PROGRAMS -->
+<section id="programs">
+
+  <div class="title">
+
+    <h2>
+      Football <span>Programs</span>
+    </h2>
+
+    <p>
+      Age-appropriate football development for young players.
+    </p>
+
+  </div>
+
+
+  <div class="programs">
+
+    <div class="program">
+
+      <h3>U8</h3>
+
+      <p>
+        Fun, football basics and introduction to the game.
+      </p>
+
+    </div>
+
+
+    <div class="program">
+
+      <h3>U12</h3>
+
+      <p>
+        Skills, teamwork and game understanding.
+      </p>
+
+    </div>
+
+
+    <div class="program">
+
+      <h3>U14</h3>
+
+      <p>
+        Technical and competitive player development.
+      </p>
+
+    </div>
+
+
+    <div class="program">
+
+      <h3>U18</h3>
+
+      <p>
+        Advanced football and player development.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TOURNAMENT -->
+<section id="tournament">
+
+  <div class="event">
+
+    <div>
+
+      <h2>
+        Football Academies & Primary Schools Tournament
+      </h2>
+
+      <p>
+        <strong>4 September 2026</strong>
+        • Kiboga Saaza Playground
+      </p>
+
+      <p>
+        Categories:
+        U8 • U12 • U14
+      </p>
+
+      <p>
+        Registration:
+        UGX 25,000/=
+      </p>
+
+      <p>
+        Winners receive a trophy and gold medals.
+        Runners-up receive silver medals.
+      </p>
+
+    </div>
+
+
+    <a class="btn" href="tel:0705318174">
+      Register a Team
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- SPONSORSHIP -->
+<section id="sponsorship" class="sponsorship">
+
+  <div class="title">
+
+    <h2>
+      Support <span>Young Talent</span>
+    </h2>
+
+  </div>
+
+
+  <div class="sponsor-intro">
+
+    <p>
+      Black Stars Soccer Academy welcomes individuals, companies,
+      organisations and partners who want to support young footballers
+      and help create opportunities for children in Kiboga.
+    </p>
+
+    <p>
+      Sponsorship can support football development, education,
+      girls' football, equipment, transportation, competitions and
+      player development.
+    </p>
+
+  </div>
+
+
+  <div class="sponsor-grid">
+
+
+    <!-- FOOTBALL SPONSORSHIP -->
+    <div class="sponsor-card">
+
+      <h3>
+        ⚽ Football Sponsorship
+      </h3>
+
+      <p>
+        Sponsors can support young players through football-related
+        needs such as training equipment, football kits, transport,
+        competitions and player development activities.
+      </p>
+
+      <h4>
+        Possible areas of support
+      </h4>
+
+      <ul class="sponsor-list">
+
+        <li>Football equipment</li>
+        <li>Training kits</li>
+        <li>Competition transportation</li>
+        <li>Tournament participation</li>
+        <li>Coaching and training activities</li>
+        <li>Girls' football development</li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- EDUCATION SPONSORSHIP -->
+    <div class="sponsor-card">
+
+      <h3>
+        📚 Education Sponsorship
+      </h3>
+
+      <p>
+        Education sponsorship helps young players remain in school
+        while continuing their football development.
+      </p>
+
+      <h4>
+        Monthly Education Sponsorship
+      </h4>
+
+      <div class="price-box">
+
+        <strong>$35</strong>
+
+        <br>
+
+        per child / month
+
+      </div>
+
+      <h4>
+        Yearly Education Sponsorship
+      </h4>
+
+      <div class="price-box">
+
+        <strong>$1,000</strong>
+
+        <br>
+
+        per child / year
+
+      </div>
+
+    </div>
+
+
+    <!-- SPONSORSHIP PERIOD -->
+    <div class="sponsor-card">
+
+      <h3>
+        📅 Sponsorship Period
+      </h3>
+
+      <p>
+        Sponsors can choose the period that fits their capacity
+        and partnership goals.
+      </p>
+
+      <ul class="sponsor-list">
+
+        <li>1 month</li>
+        <li>6 months</li>
+        <li>1 year</li>
+        <li>Multi-year sponsorship</li>
+        <li>Ongoing support</li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- GROUP SPONSORSHIP -->
+    <div class="sponsor-card">
+
+      <h3>
+        👥 Group Sponsorship
+      </h3>
+
+      <p>
+        Sponsors can support more than one young athlete or an
+        entire football program.
+      </p>
+
+      <ul class="sponsor-list">
+
+        <li>
+          5 athletes × $35/month =
+          <strong>$175/month</strong>
+        </li>
+
+        <li>
+          10 athletes × $35/month =
+          <strong>$350/month</strong>
+        </li>
+
+        <li>
+          Entire age group
+        </li>
+
+        <li>
+          Girls' football program
+        </li>
+
+        <li>
+          Football team
+        </li>
+
+        <li>
+          Specific academy project
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- SPONSOR BENEFITS -->
+    <div class="sponsor-card">
+
+      <h3>
+        🤝 What Sponsors Receive
+      </h3>
+
+      <ul class="sponsor-list">
+
+        <li>Updates about supported players</li>
+
+        <li>Progress reports</li>
+
+        <li>Football and education updates</li>
+
+        <li>Competition updates</li>
+
+        <li>Recognition where agreed</li>
+
+        <li>Certificate where applicable</li>
+
+        <li>Sponsor recognition where agreed</li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- CHILD SELECTION -->
+    <div class="sponsor-card">
+
+      <h3>
+        ❤️ Choosing a Child to Support
+      </h3>
+
+      <p>
+        A sponsor may choose to support a specific child or allow
+        the academy to identify a child who needs support.
+      </p>
+
+      <h4>
+        Selection considerations
+      </h4>
+
+      <ul class="sponsor-list">
+
+        <li>Financial need</li>
+        <li>Commitment to football</li>
+        <li>Training attendance</li>
+        <li>Age and education</li>
+        <li>Family circumstances</li>
+        <li>Long-term development needs</li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="card sponsor-button">
+
+    <h2>
+      Become a <strong>Black Stars Sponsor</strong>
+    </h2>
+
+    <p>
+      Interested in supporting young footballers in Kiboga?
+      Contact the academy to discuss sponsorship opportunities.
+    </p>
+
+    <a
+      class="btn"
+      href="https://wa.me/256705318174"
+      target="_blank"
+    >
+      💬 Contact Us on WhatsApp
+    </a>
+
+    <p>
+      Sponsorship does not guarantee team selection,
+      a professional contract, an international opportunity
+      or employment.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+  <div class="title">
+
+    <h2>
+      Academy <span>Gallery</span>
+    </h2>
+
+    <p>
+      A look at Black Stars Soccer Academy in action.
+    </p>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <img src="team1.jpg" alt="Black Stars Soccer Academy players">
+
+    <img src="team2.jpg" alt="Black Stars Soccer Academy training">
+
+    <img src="team3.jpg" alt="Black Stars Soccer Academy players training">
+
+    <img src="team4.jpg" alt="Black Stars Soccer Academy football">
+
+    <img src="team5.jpg" alt="Black Stars Soccer Academy team">
+
+  </div>
+
+</section>
+
+
+<!-- REGISTRATION -->
+<section id="register">
+
+  <div class="title">
+
+    <h2>
+      Register <span>Your Child</span>
+    </h2>
+
+    <p>
+      Give your child an opportunity to learn, develop and enjoy football.
+    </p>
+
+  </div>
+
+
+  <div class="form">
+
+    <form
+      action="mailto:socceracademyblackstars@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+
+      <div class="form-grid">
+
+
+        <div>
+
+          <label>
+            Parent / Guardian Name
+          </label>
+
+          <input
+            type="text"
+            name="Parent or Guardian Name"
+            required
+          >
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            name="Phone Number"
+            required
+          >
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Player Name
+          </label>
+
+          <input
+            type="text"
+            name="Player Name"
+            required
+          >
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Player Age
+          </label>
+
+          <input
+            type="number"
+            name="Player Age"
+            min="5"
+            max="18"
+            required
+          >
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Player Gender
+          </label>
+
+          <select name="Player Gender" required>
+
+            <option value="">
+              Select
+            </option>
+
+            <option>
+              Boy
+            </option>
+
+            <option>
+              Girl
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div>
+
+          <label>
+            Program
+          </label>
+
+          <select name="Program" required>
+
+            <option value="">
+              Select Program
+            </option>
+
+            <option>
+              U8
+            </option>
+
+            <option>
+              U12
+            </option>
+
+            <option>
+              U14
+            </option>
+
+            <option>
+              U18
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="full">
+
+          <label>
+            Message
+          </label>
+
+          <textarea
+            name="Message"
+            placeholder="Tell us anything we should know..."
+          ></textarea>
+
+        </div>
+
+
+        <div class="full">
+
+          <button
+            class="btn"
+            type="submit"
+          >
+            Submit Registration
+          </button>
+
+        </div>
+
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+
+  <h2>
+    Ready to Join Black Stars?
+  </h2>
+
+  <p>
+    Give your child a chance to learn football,
+    build confidence and develop valuable life skills.
+  </p>
+
+  <a
+    class="btn"
+    href="https://wa.me/256705318174"
+    target="_blank"
+  >
+    💬 Chat With Us on WhatsApp
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+
+  <div>
+
+    <h3>
+      Black Stars Soccer Academy
+    </h3>
+
+    <p>
+      Developing young football talent and building champions
+      in Kiboga District, Uganda.
+    </p>
+
+    <p>
+      Established in 2018.
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <h3>
+      Quick Links
+    </h3>
+
+    <a href="#about">About</a>
+
+    <a href="#history">History</a>
+
+    <a href="#programs">Programs</a>
+
+    <a href="#sponsorship">Sponsorship</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#register">Register</a>
+
+  </div>
+
+
+  <div>
+
+    <h3>
+      Contact
+    </h3>
+
+    <p>
+      📍 Kiboga, Uganda
+    </p>
+
+    <p>
+      📞 0705 318174
+    </p>
+
+    <p>
+      📞 0788 071574
+    </p>
+
+    <p>
+      ✉ socceracademyblackstars@gmail.com
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+<div class="copy">
+
+  © 2026 Black Stars Soccer Academy.
+  All Rights Reserved.
+
+</div>
+
+
+</body>
+</html>
